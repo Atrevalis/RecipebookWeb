@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Sign in</title>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<header th:insert = "header.html :: header"></header>
+
+<body class="text-center">
+<main>
+    <form>
+        <p></p>
+        <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+        <h5 th:text="${submit}" style="color: green">
+            <h5 th:text="${warning}" style="color: crimson">
+        <div>
+            <input type="email" name="login" placeholder="Email address">
+        </div>
+            <div >
+                <input type="password" name="password" placeholder="Password">
+            </div>
+<div>
+    <button type="submit">Sign in</button>
+    <a href="/">Registration</a>
+</div>
+    </form>
+</main>
+</body>
+</html>
